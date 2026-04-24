@@ -305,7 +305,7 @@ def _(
     _num_trials_val = num_trials.value
 
     @remote(pool_name.value, stage_name=stage_name.value, target_instances=target_instances.value)
-    def _train_remote(source_dataset, model_name_arg, mr_schema_name, experiment_name_arg, session):
+    def train_remote(source_dataset, model_name_arg, mr_schema_name, experiment_name_arg, session):
         from snowflake.ml.modeling import tune
         from snowflake.ml.modeling.tune.search import RandomSearch
         from snowflake.ml.registry import Registry
@@ -357,7 +357,7 @@ def _(
         _results = _tuner.run(dataset_map=_dataset_map)
         return _results.results
 
-    training_results = _train_remote(
+    training_results = train_remote(
         source_dataset=_source_dataset,
         model_name_arg=_fqn_model,
         mr_schema_name=mr_schema.value,
