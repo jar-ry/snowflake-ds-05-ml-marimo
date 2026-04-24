@@ -1,0 +1,7 @@
+connection.json
+__pycache__/
+*.pyc
+.marimo/
+__marimo__/
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,18 @@
+[project]
+name = "marimo-ml-jobs"
+version = "0.1.0"
+description = "Customer Value Model - Marimo hybrid multi-notebook architecture"
+requires-python = ">=3.10"
+dependencies = [
+    "marimo>=0.10.0",
+    "snowflake-ml-python>=1.7.0",
+    "snowflake-snowpark-python>=1.22.0",
+    "xgboost>=2.0.0",
+    "scikit-learn>=1.4.0",
+    "pandas>=2.0.0",
+    "shap>=0.45.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

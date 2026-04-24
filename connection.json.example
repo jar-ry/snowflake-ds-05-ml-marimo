@@ -1,0 +1,7 @@
+{
+    "account": "your_account_identifier",
+    "user": "your_username",
+    "password": "your_password",
+    "warehouse": "your_warehouse",
+    "role": "ACCOUNTADMIN"
+}
